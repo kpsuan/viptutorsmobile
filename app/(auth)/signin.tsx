@@ -133,13 +133,13 @@ export default function SignInScreen() {
             
             {/* Email Input */}
             <View style={styles.inputGroup}>
-              <Text style={styles.inputLabel}>Email Address</Text>
+              <Text style={styles.inputLabel}>Username / Email / Mobile</Text>
               <Animated.View style={{ transform: [{ translateX: emailShake }] }}>
                 <View style={[styles.inputContainer, error.email && styles.inputError]}>
                   <Ionicons name="mail-outline" size={20} color="#999" style={styles.inputIcon} />
                   <TextInput
                     style={styles.textInput}
-                    placeholder="Enter your email..."
+                    placeholder="Username / Email / Mobile"
                     placeholderTextColor="#999"
                     value={email}
                     onChangeText={t => { setEmail(t); setError(e => ({ ...e, email: '' })); }}
